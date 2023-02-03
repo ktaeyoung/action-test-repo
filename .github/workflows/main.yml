@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: ktaeyoung/action-test-repo@v1.1
+        uses: ktaeyoung/action-test-repo@v1.2
         with:
           who-to-greet: 'Mona the Octocat'
           github-token: ${{ secrets.PUML_TOKEN }}
