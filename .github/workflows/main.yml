@@ -1,0 +1,14 @@
+on: 
+  workflow_dispatch:
+  
+jobs:
+  taeyoung-action:
+    runs-on: ubuntu-latest
+    name: Taeyoung action
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: run my action
+        uses: ./
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
